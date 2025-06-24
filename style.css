@@ -133,3 +133,18 @@ footer {
   font-size: 0.85rem;
   border: 1px solid var(--accent);
 }
+/* Back to Top Button */
+#backToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 9999px;
+  cursor: pointer;
+  display: none;
+  z-index: 100;
+  font-size: 1.5rem;
+}
