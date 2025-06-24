@@ -13,12 +13,14 @@
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
+      <a href="#motivation">Motivation</a>
       <a href="#contact">Contact</a>
       <button id="toggle-theme">🌙</button>
     </nav>
   </header>
 
   <section id="hero">
+    <img src="your-photo.jpg" alt="Vlad Cechina" class="profile-pic" />
     <h2>Computer Science Student | Data & Software Projects</h2>
     <p>Welcome to my portfolio. Explore my projects, skills, and experience.</p>
     <a href="#projects" class="cta">View Projects</a>
@@ -26,44 +28,50 @@
 
   <section id="about">
     <h2>About Me</h2>
-    <p>I am Vlad Cechina, a Computer Science student with hands-on experience in data-driven product development. I recently participated in the <strong>Data Driven Business Labs</strong> project, where I helped develop real-world solutions based on data insights and software engineering practices.</p>
+    <p>I am Vlad Cechina, a Computer Science student with hands-on experience in data-driven product development. I participated in the <strong>Data Driven Business Labs</strong> project, where I helped develop real-world solutions based on data insights and software engineering practices. Our solution was an interactive dashboard that helps visualize the electricity chain in the Netherlends by province, and by gemeente</p>
   </section>
 
   <section id="projects">
     <h2>Projects</h2>
     <div class="project">
-      <h3>Atos</h3>
-      <p>Team project focused on data analysis and dashboarding. Built using Python and Plotly Dash.</p>
+      <h3>Atos Dashboard</h3>
+      <p>Interactive dashboard project built using Python and Plotly Dash. Focused on analyzing data for strategic insights. (Coming soon)</p>
       <a href="https://github.com/YVLC/Atos" target="_blank">View on GitHub</a>
-    </div>
-    <div class="project">
-      <h3>Interactive Data Dashboard</h3>
-      <p>A personal Dash app for exploring dataset trends interactively. (Coming soon)</p>
-      <a href="#">Launch Notebook (Binder)</a>
     </div>
   </section>
 
   <section id="skills">
     <h2>Skills</h2>
     <div id="skill-buttons">
-      <button onclick="filterSkills('All')">All</button>
-      <button onclick="filterSkills('Frontend')">Frontend</button>
-      <button onclick="filterSkills('Backend')">Backend</button>
-      <button onclick="filterSkills('Data')">Data</button>
+      <button class="filter-btn" onclick="filterSkills('All')">All</button>
+      <button class="filter-btn" onclick="filterSkills('Frontend')">Frontend</button>
+      <button class="filter-btn" onclick="filterSkills('Backend')">Backend</button>
+      <button class="filter-btn" onclick="filterSkills('Data')">Data</button>
     </div>
     <ul id="skills-list">
-      <li data-category="Frontend">HTML/CSS</li>
-      <li data-category="Frontend">JavaScript</li>
-      <li data-category="Backend">Python</li>
-      <li data-category="Backend">Flask</li>
-      <li data-category="Data">Pandas</li>
-      <li data-category="Data">Plotly Dash</li>
+      <li class="skill-tag" data-category="Frontend">HTML/CSS</li>
+      <li class="skill-tag" data-category="Frontend">JavaScript</li>
+      <li class="skill-tag" data-category="Backend">Python</li>
+      <li class="skill-tag" data-category="Backend">Flask</li>
+      <li class="skill-tag" data-category="Backend">C#</li>
+      <li class="skill-tag" data-category="Backend">Java</li>
+      <li class="skill-tag" data-category="Backend">Microservices</li>
+      <li class="skill-tag" data-category="Backend">Docker</li>
+      <li class="skill-tag" data-category="Backend">Kubernetes</li>
+      <li class="skill-tag" data-category="Backend">Cloud Services</li>
+      <li class="skill-tag" data-category="Data">Pandas</li>
+      <li class="skill-tag" data-category="Data">Plotly Dash</li>
     </ul>
+  </section>
+
+  <section id="motivation">
+    <h2>Motivation</h2>
+    <p>I am deeply motivated to contribute to innovative projects where I can learn, grow, and apply my skills. My goal is to constantly develop myself professionally while being part of impactful technological solutions.</p>
   </section>
 
   <section id="contact">
     <h2>Contact Me</h2>
-    <p>Email me at: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+    <p>Email me at: <a href="mailto:vladcechina@gmail.com">vladcechina@gmail.com</a></p>
   </section>
 
   <footer>
