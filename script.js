@@ -18,7 +18,7 @@ function filterSkills(category) {
 
 // 3. Typewriter effect
 const typewriterEl = document.getElementById('typewriter');
-const phrases = ["Computer Science Student", "Backend & Data Developer", "Open to Innovation & Growth"];
+const phrases = ["Computer Science Student", "Fullstack Developer", "Open to Innovation & Growth"];
 let i = 0, j = 0, currentPhrase = [], isDeleting = false;
 
 function loopType() {
