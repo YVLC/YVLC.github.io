@@ -148,3 +148,5 @@ footer {
   z-index: 100;
   font-size: 1.5rem;
 }
+#projects .project {
+  transition: transform 0.3s ease, box-shadow 0}
