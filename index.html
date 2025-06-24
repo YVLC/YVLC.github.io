@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -26,7 +25,7 @@
 
   <section id="hero">
     <img src="/MyPicture.jpg" alt="Vlad Cechina" class="profile-pic" />
-    <h2 id="typewriter"></h2>
+    <h2 id="typewriter" style="min-height: 1.2em"></h2>
     <p>Welcome to my portfolio. Explore my projects, skills, and experience.</p>
     <a href="#projects" class="cta">View Projects</a>
   </section>
@@ -43,6 +42,16 @@
       <p>Interactive dashboard project built using Python and Plotly Dash. Focused on analyzing data for strategic insights. (Coming soon)</p>
       <a href="https://github.com/YVLC/Atos" target="_blank">View on GitHub</a>
     </div>
+    <div class="project">
+      <h3>E-commerce Microservice Architecture</h3>
+      <p>A small-scale e-commerce platform built in C# using Docker and Kubernetes. Includes 5 backend microservices and 1 frontend service. Services communicate via RabbitMQ.</p>
+      <a href="https://github.com/YVLC/E-commerce" target="_blank">View on GitHub</a>
+    </div>
+    <div class="project">
+      <h3>Zertic BI Integration</h3>
+      <p>Custom Yellowfin BI integration into the EZ2XS platform (TIC solutions). Includes a Python-based data cleaning script for importing and embedding data into Yellowfin BI dashboards.</p>
+      <a href="https://github.com/YVLC/Zertic" target="_blank">View on GitHub</a>
+    </div>
   </section>
 
   <section id="skills">
@@ -50,7 +59,7 @@
     <div id="skill-buttons">
       <button class="filter-btn" onclick="filterSkills('All')">All</button>
       <button class="filter-btn" onclick="filterSkills('Frontend')">Frontend</button>
-      <button class="filter-btn" onclick="filterSkills('Backend')">Backend</button>
+      <button class="filter-btn" onclick="filterSkills('Backend')">Full-stack</button>
       <button class="filter-btn" onclick="filterSkills('Data')">Data</button>
     </div>
     <ul id="skills-list">
