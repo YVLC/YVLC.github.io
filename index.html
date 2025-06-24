@@ -3,44 +3,73 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Name</title>
+  <title>Vlad Cechina | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>Your Name</h1>
+    <h1>Vlad Cechina</h1>
     <nav>
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
       <a href="#contact">Contact</a>
+      <button id="toggle-theme">🌙</button>
     </nav>
   </header>
 
   <section id="hero">
-    <h2>Welcome to my website!</h2>
-    <p>This is a static single-page website hosted on GitHub Pages.</p>
+    <h2>Computer Science Student | Data & Software Projects</h2>
+    <p>Welcome to my portfolio. Explore my projects, skills, and experience.</p>
+    <a href="#projects" class="cta">View Projects</a>
   </section>
 
   <section id="about">
     <h2>About Me</h2>
-    <p>Brief description about who you are and what you do.</p>
+    <p>I am Vlad Cechina, a Computer Science student with hands-on experience in data-driven product development. I recently participated in the <strong>Data Driven Business Labs</strong> project, where I helped develop real-world solutions based on data insights and software engineering practices.</p>
   </section>
 
   <section id="projects">
     <h2>Projects</h2>
-    <ul>
-      <li>Project 1 – Description</li>
-      <li>Project 2 – Description</li>
+    <div class="project">
+      <h3>Atos</h3>
+      <p>Team project focused on data analysis and dashboarding. Built using Python and Plotly Dash.</p>
+      <a href="https://github.com/YVLC/Atos" target="_blank">View on GitHub</a>
+    </div>
+    <div class="project">
+      <h3>Interactive Data Dashboard</h3>
+      <p>A personal Dash app for exploring dataset trends interactively. (Coming soon)</p>
+      <a href="#">Launch Notebook (Binder)</a>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div id="skill-buttons">
+      <button onclick="filterSkills('All')">All</button>
+      <button onclick="filterSkills('Frontend')">Frontend</button>
+      <button onclick="filterSkills('Backend')">Backend</button>
+      <button onclick="filterSkills('Data')">Data</button>
+    </div>
+    <ul id="skills-list">
+      <li data-category="Frontend">HTML/CSS</li>
+      <li data-category="Frontend">JavaScript</li>
+      <li data-category="Backend">Python</li>
+      <li data-category="Backend">Flask</li>
+      <li data-category="Data">Pandas</li>
+      <li data-category="Data">Plotly Dash</li>
     </ul>
   </section>
 
   <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: your.email@example.com</p>
+    <h2>Contact Me</h2>
+    <p>Email me at: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
   </section>
 
   <footer>
-    <p>&copy; 2025 Your Name</p>
+    <p>&copy; 2025 Vlad Cechina</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

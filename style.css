@@ -1,21 +1,48 @@
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
+  font-family: system-ui, sans-serif;
   line-height: 1.6;
-  color: #333;
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background 0.3s, color 0.3s;
+}
+
+:root {
+  --bg: #ffffff;
+  --text: #111111;
+  --accent: #1f2937;
+}
+
+.dark {
+  --bg: #1f2937;
+  --text: #f3f4f6;
+  --accent: #10b981;
 }
 
 header {
-  background-color: #222;
-  color: #fff;
-  padding: 1rem;
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: var(--accent);
+  color: white;
 }
 
 nav a {
-  color: #fff;
-  margin: 0 1rem;
+  margin-right: 1rem;
+  color: white;
   text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+#toggle-theme {
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
 }
 
 section {
@@ -24,15 +51,27 @@ section {
   margin: auto;
 }
 
-#hero {
-  background-color: #f4f4f4;
-  text-align: center;
-  padding: 4rem 2rem;
+.cta {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: var(--accent);
+  color: white;
+  text-decoration: none;
+  border-radius: 0.5rem;
+}
+
+.project {
+  background: rgba(0, 0, 0, 0.05);
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 0.5rem;
 }
 
 footer {
-  background-color: #222;
-  color: #fff;
   text-align: center;
   padding: 1rem;
+  background: #f3f4f6;
+  color: #666;
+  font-size: 0.9rem;
 }
